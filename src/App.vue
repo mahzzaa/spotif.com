@@ -64,7 +64,6 @@
            if (this.index > this.songs.length - 1){
           this.index = 0;
         }
-
         this.current = this.songs[this.index];
         this.play(this.current);
          }.bind(this));
@@ -79,7 +78,6 @@
         if (this.index > this.songs.length - 1){
           this.index = 0;
         }
-
         this.current = this.songs[this.index];
         this.play(this.current);
       },
@@ -88,7 +86,6 @@
         if (this.index < 0){
           this.index = this.songs.length - 1;
         }
-
         this.current = this.songs[this.index];
         this.play(this.current);
       }
@@ -108,12 +105,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body{
   font-family: 'Permanent Marker', cursive;
-
 }
-
 header{
   display: flex;
   justify-content: center;
@@ -123,14 +117,12 @@ header{
   background: linear-gradient(to right, #6ccfb6, #7c2a95bb);
   color: rgba(250, 235, 215, 0.815);
 }
-
 main{
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
   padding: 25px;
 }
-
 .song-title{
   color: #5b756fc9;
   font-size: 20;
@@ -138,19 +130,16 @@ main{
   text-transform: uppercase;
   text-align: center;
 }
-
 .song-title span{
   font-weight: 400;
   font-style: italic;
   padding: 30px 15px;
 }
-
 .control{
   display: flex;
   justify-content: center;
   padding: 30px 15px;
 }
-
 button{
   appearance: none;
   background: none;
@@ -158,7 +147,6 @@ button{
   outline: none;
   cursor: pointer;
 }
-
 .play , .pause{
   font-size: 20px;
   font-weight: 700;
@@ -168,11 +156,9 @@ button{
   background-color: #73e0c5c0;
   border-radius: 27px;
 }
-
 button:hover{
   opacity: 0.8;
 }
-
 .next, .prev{
   font-size: 16px;
   font-weight: 600;
@@ -182,11 +168,9 @@ button:hover{
   background-color: #c7e9e0c0;
   border-radius: 100px;
 }
-
 .playlist{
   padding: 0px 30px;
 }
-
 .playlist h3{
   color: rgba(133, 180, 106, 0.849);
   font-size: 27px;
@@ -194,7 +178,6 @@ button:hover{
   margin-bottom: 30px;
   text-align: center;
 }
-
 .playlist .song{
   display: block;
   width: 100%;
@@ -203,11 +186,9 @@ button:hover{
   font-weight: 500;
   cursor: pointer;
 }
-
 .playlist .song:hover{
   color:  rgb(97, 156, 70) ;
 }
-
 .playlist .song.playing{
   color: antiquewhite;
   border-radius: 25px;
